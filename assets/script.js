@@ -44,6 +44,20 @@ for(let i=0; i<teamMembers.length;i++){
   console.log(member)
 
   const {name,role,email,img} =member;
-  console.log(name,role,email,img)
+  console.log(name,role,email,img);
+  const markup =`
+  <div class="col-12 col-md-4">
+    <div class="cards">
+      <div class="card-body">
+        <div class="card-picture fload-left">
+          <img src="" alt="Photo">
+        </div>
+        <h3 class="card-title"></h3>
+        <p class="card-job"></p>
+        <p class="card-mail"></p>
+      </div>
+    </div>
+  </div>
+`
 }
 
