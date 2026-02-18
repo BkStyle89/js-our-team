@@ -39,6 +39,12 @@ const teamMembers = [
 
 const rowEl = document.querySelector(".row")
 const formEl=document.getElementById("new-member")
+const nameEl=document.getElementById("name")
+const roleEl=document.getElementById("role")
+const mailEl=document.getElementById("mail")
+const imageEl=document.getElementById("image")
+/*  console.log(formEl,nameEl,roleEl,mailEl,imageEl);  */
+
 
 for(let i=0; i<teamMembers.length;i++){
   const member = teamMembers[i]
@@ -65,5 +71,22 @@ for(let i=0; i<teamMembers.length;i++){
 `
 rowEl.innerHTML += markup
 }
+
+formEl.addEventListener("submit",function (e){
+  e.preventDefault()
+ console.log(nameEl.value,roleEl.value,mailEl.value,imageEl.value); 
+ const name = nameEl.value
+ const role = roleEl.value
+ const email = mailEl.value
+ const img = imageEl.value
+
+ const newMember= {
+    name: ,
+    role: ,
+    email: ,
+    img: 
+ }
+
+})
 
 
