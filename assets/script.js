@@ -38,6 +38,7 @@ const teamMembers = [
 ];
 
 const rowEl = document.querySelector(".row")
+const formEl=document.getElementById("new-member")
 
 for(let i=0; i<teamMembers.length;i++){
   const member = teamMembers[i]
@@ -64,4 +65,5 @@ for(let i=0; i<teamMembers.length;i++){
 `
 rowEl.innerHTML += markup
 }
+
 
