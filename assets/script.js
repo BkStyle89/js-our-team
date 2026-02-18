@@ -37,4 +37,10 @@ const teamMembers = [
   }
 ];
 
+const rowEl = document.querySelector(".row")
+
+for(let i=0; i<teamMembers.length;i++){
+  const member = teamMembers[i]
+  console.log(member)
+}
 
