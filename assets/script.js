@@ -46,15 +46,18 @@ for(let i=0; i<teamMembers.length;i++){
   const {name,role,email,img} =member;
   console.log(name,role,email,img);
   const markup =`
-  <div class="col-12 col-md-4 mt-5">
-    <div class="cards">
-      <div class="card-body">
-        <div class="card-picture fload-left">
-          <img src="${img}" alt="Photo">
+  <div class="col-12 col-md-4 mt-5 ">
+    <div class="cards bg-black " >
+      <div class="card-body d-flex" >
+        <div class="card-picture ">
+          <img style="width: 140px" src="${img}" alt="Photo">
         </div>
-        <h3 class="card-title">${name}</h3>
-        <p class="card-role">${role}</p>
-        <p class="card-mail"${email}></p>
+        <div class="p-3 mt-2 justify-content-center">
+          <h3 class="card-title text-light">${name}</h3>
+          <div class="card-role text-light ">${role}</div>
+          <div class= "card-mail text-primary ">${email}
+          </div>
+        </div> 
       </div>
     </div>
   </div>
